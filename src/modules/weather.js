@@ -2,7 +2,6 @@ import view from "./view";
 
 const weather = (() => {
   function convertData(data) {
-    console.log(data);
     const cityName = data.name;
     const icon = data.weather[0].icon;
     const weatherDescription =
