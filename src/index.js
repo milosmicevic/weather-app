@@ -21,5 +21,3 @@ searchBtn.addEventListener("click", async () => {
     view.renderResults(weatherData);
   }
 });
-
-console.log(new Date().getHours());
