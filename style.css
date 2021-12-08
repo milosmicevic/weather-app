@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Bhaijaan 2", cursive, sans-serif;
+}
+
+html::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 0.5vmin;
+  height: 0.5vmin;
+  border-radius: 50%;
+  color: transparent;
+  box-shadow: 93vw 63vh 0.3vmin rgba(255, 255, 255, 0.8), 3vw 17vh 0.15vmin #fff,
+    28vw 85vh 0.15vmin #fff, 97vw 82vh 0.15vmin #fff, 55vw 83vh 0.15vmin #fff,
+    74vw 72vh 0.15vmin #fff, 84vw 11vh 0.15vmin #fff, 32vw 6vh 0.15vmin #fff,
+    45vw 92vh 0.15vmin #fff, 98vw 57vh 0.15vmin #fff, 63vw 98vh 0.15vmin #fff,
+    90vw 46vh 0.15vmin #fff, 50vw 86vh 0.15vmin #fff, 38vw 21vh 0.15vmin #fff,
+    74vw 2vh 0.15vmin #fff, 89vw 22vh 0.15vmin #fff, 39vw 0vh 0.15vmin #fff,
+    25vw 89vh 0.15vmin #fff, 54vw 58vh 0.15vmin #fff, 81vw 39vh 0.15vmin #fff,
+    51vw 8vh 0.15vmin #fff, 24vw 56vh 0.15vmin #fff, 50vw 23vh 0.15vmin #fff,
+    62vw 34vh 0.15vmin #fff, 10vw 77vh 0.15vmin #fff, 92vw 45vh 0.15vmin #fff,
+    70vw 40vh 0.15vmin #fff, 2vw 53vh 0.15vmin #fff, 3vw 54vh 0.15vmin #fff,
+    18vw 21vh 0.15vmin #fff, 48vw 47vh 0.15vmin #fff, 83vw 96vh 0.15vmin #fff,
+    26vw 32vh 0.15vmin #fff, 46vw 9vh 0.15vmin #fff, 2vw 13vh 0.15vmin #fff,
+    29vw 63vh 0.15vmin #fff, 17vw 90vh 0.15vmin #fff, 78vw 9vh 0.15vmin #fff,
+    15vw 39vh 0.15vmin #fff, 90vw 5vh 0.15vmin #fff;
+}
+
+body {
+  width: 90%;
+  min-height: 100vh;
+  color: #f9f9f9;
+  margin: 0 auto;
+}
+
+body::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+#date-container {
+  display: flex;
+  align-items: baseline;
+  height: 10vh;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+#day {
+  font-size: 2.5rem;
+}
+
+#month {
+  font-size: 1.1rem;
+}
+
+main {
+  width: 28rem;
+}
+
+#search-form {
+  display: flex;
+  height: 3rem;
+  background-color: #f9f9f9;
+  border-radius: 1.5rem;
+}
+
+#search-input {
+  width: 83%;
+  background-color: transparent;
+  border: none;
+  padding-left: 1rem;
+}
+
+#search-input:focus {
+  outline: none;
+}
+
+#search-button {
+  width: 17%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #757575;
+}
+
+#search-results {
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+#weather-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#primary-information-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#weather-icon {
+  width: 11rem;
+  height: 11rem;
+}
+
+#temperature {
+  font-size: 5rem;
+}
+
+#additional-information-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.additional-information {
+  display: flex;
+  gap: 2rem;
+}
+
+#error-message-container {
+  position: absolute;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 28rem;
+  height: 3rem;
+  background-color: #ff6392;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  bottom: 3%;
+}
+
+#error-message {
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 490px) {
+  main,
+  #error-message-container {
+    width: 21rem;
+  }
+}
