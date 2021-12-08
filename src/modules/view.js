@@ -7,13 +7,24 @@ const view = (() => {
     const month = document.querySelector("#month");
 
     if (date.isItDay()) {
-      body.style.backgroundColor = "#0096c7";
+      body.style.backgroundImage = `linear-gradient(
+        to right top,
+        #0096c7,
+        #14a3cf,
+        #26b0d6,
+        #37bddd,
+        #48cae4
+      )`;
     } else {
-      body.style.backgroundColor = "#001a26";
+      body.style.backgroundImage = `linear-gradient(
+        to right top,
+        #000132,
+        #001546,
+        #00225c,
+        #022f72,
+        #023e8a
+        )`;
     }
-    day.textContent = `${date.currentDayName()} ${date.currentDayNumber()}`;
-    month.textContent = date.currentMonth();
-  }
 
   function renderResults(weatherData) {
     if (!weatherData) {
