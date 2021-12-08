@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="main.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header>
+      <div id="date-container">
+        <h1 id="day"></h1>
+        <span id="month"></span>
+      </div>
+    </header>
+    <main>
+      <form id="search-form" novalidate autocomplete="off">
+        <input id="search-input" type="text" placeholder="Enter city name" />
+        <button id="search-button" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+      <div id="search-results">
+        <h2 id="city-name"></h2>
+        <div id="weather-container">
+          <img id="weather-icon" src="" alt="Icon" />
+          <div id="primary-information-container">
+            <div id="weather-description"></div>
+            <div id="temperature"></div>
+            <div id="feels-like"></div>
+          </div>
+        </div>
+        <div id="additional-information-container">
+          <div class="additional-information">
+            <img src="./images/max.png" alt="Max Temperature" />
+            <div id="max-temperature"></div>
+          </div>
+          <div class="additional-information">
+            <img src="./images/min.png" alt="Min Temperature" />
+            <div id="min-temperature"></div>
+          </div>
+          <div class="additional-information">
+            <img src="./images/humidity.png" alt="Humidity" />
+            <div id="humidity"></div>
+          </div>
+          <div class="additional-information">
+            <img src="./images/wind.png" alt="Wind" />
+            <div id="wind"></div>
+          </div>
+        </div>
+      </div>
+      <div id="error-message-container">
+        <span id="error-message"></span>
+        <img src="./images/danger.png" alt="Danger" />
+      </div>
+    </main>
+  </body>
+</html>
