@@ -184,7 +184,6 @@ __webpack_require__.r(__webpack_exports__);
 
 const weather = (() => {
   function convertData(data) {
-    console.log(data);
     const cityName = data.name;
     const icon = data.weather[0].icon;
     const weatherDescription =
@@ -318,8 +317,6 @@ searchBtn.addEventListener("click", async () => {
     _modules_view__WEBPACK_IMPORTED_MODULE_1__["default"].renderResults(weatherData);
   }
 });
-
-console.log(new Date().getHours());
 
 })();
 
