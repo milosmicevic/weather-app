@@ -26,6 +26,10 @@ const view = (() => {
         )`;
     }
 
+    day.textContent = `${date.currentDayName()} ${date.currentDayNumber()}`;
+    month.textContent = date.currentMonth();
+  }
+
   function renderResults(weatherData) {
     if (!weatherData) {
       handleErrorMessage("We can't find any data!");
